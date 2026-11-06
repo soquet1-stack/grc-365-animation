@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dragon Flight</title>
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<style>
+	body {
+		background: #4F4848;
+	} * {
+		margin: 0;
+		padding: 0;
+		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"
+	} h1 {
+		font: 32pt/1em MedievalSharp;
+		color: black;
+		position: relative;
+		top: 30px;
+		left: 35px
+	} #page {
+		width: 1000px;
+		height: 700px;
+		background: url("Map.png");
+		border: 2px solid black;
+		box-shadow: 3px 3px 6px;
+		margin: 72px auto;
+		overflow: hidden;
+	} button {
+		width: 140px;
+		height: 80px;
+		font: 24pt/1em MedievalSharp;
+		color: white;
+		border-radius: 20%;
+		background-color:#854AB1;
+		position: relative;
+		top: 170px;
+		left: 380px;
+	} #dragon {
+		width: 459px;
+		height: 459px;
+		position: relative;
+		top: 600px;
+		right: 40px;
+		animation-name: fly;
+		animation-duration: 4s;
+		animation-fill-mode: forwards;
+		animation-timing-function: ease-in;
+		animation-play-state: paused;
+	} @keyframes fly {
+		0% {transform: translateX(-400px) translateY(300px);}
+		100% {transform: translateY(-1200px) translateX(700px);
+	} h2 {
+		font: 18pt/1em Cambria;
+		margin: 24px auto;
+	} h3 {
+		font: 18pt/1em Cambria;
+		margin: 24px auto;
+</style>
+</head>
+
+<body>
+	<div id="page">
+	<h1> Dragon Flight </h1>
+	<img id="dragon" src="Dragon.png"/>
+	<button onClick="document.getElementById('dragon').style.animationPlayState='running';"> Soar the Skies </button>
+	</div>
+	<h2> <a href= "https://www.istockphoto.com/search/2/image-film?phrase=flying+dragon&tracked_gsrp_landing=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fflying-dragon"> Dragon</a> </h2>
+	<h3> <a href="https://2minutetabletop.com/fantasy-campaign-map-arvyre/"> Map </a></h3>
+</body>
+</html>
